@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_example_entities_AdminUnitType" object="${adminunittype}" path="/adminunittypes" z="KMeJUQQigv7LHYYnPkoV5r28qGo=">
+        <field:display field="name" id="s_ee_itcollege_example_entities_AdminUnitType_name" object="${adminunittype}" z="864yeO1VLvUeybmf//nl7i6UCZg="/>
+        <field:display field="code" id="s_ee_itcollege_example_entities_AdminUnitType_code" object="${adminunittype}" z="6IyqlgBt6pmdWRJVCHb+2Qg4wpg="/>
+        <field:display field="comment" id="s_ee_itcollege_example_entities_AdminUnitType_comment" object="${adminunittype}" z="DnxOyqyzfqYMgYuY0Uww1jP9a34="/>
+        <field:display date="true" dateTimePattern="${adminUnitType_fromdate_date_format}" field="fromDate" id="s_ee_itcollege_example_entities_AdminUnitType_fromDate" object="${adminunittype}" z="FqVNPMahMkMdn+hewZanlM+rors="/>
+        <field:display date="true" dateTimePattern="${adminUnitType_untildate_date_format}" field="untilDate" id="s_ee_itcollege_example_entities_AdminUnitType_untilDate" object="${adminunittype}" z="qwoWCBsYJFr2mIqDRL9srTRUfg0="/>
+        <field:display field="openedBy" id="s_ee_itcollege_example_entities_AdminUnitType_openedBy" object="${adminunittype}" z="13oxaf6cXtt+UuTMUrzvsV0SEqc="/>
+        <field:display date="true" dateTimePattern="${adminUnitType_openeddate_date_format}" field="openedDate" id="s_ee_itcollege_example_entities_AdminUnitType_openedDate" object="${adminunittype}" z="4YlJqTUtNJWNBjLg2FiWfdH897M="/>
+        <field:display field="changedBy" id="s_ee_itcollege_example_entities_AdminUnitType_changedBy" object="${adminunittype}" z="Y6o3cMdU2gaJUzAT3jFlzRjieeU="/>
+        <field:display date="true" dateTimePattern="${adminUnitType_changeddate_date_format}" field="changedDate" id="s_ee_itcollege_example_entities_AdminUnitType_changedDate" object="${adminunittype}" z="GTBfeXqzumRqHYpPI1YHCUg5stM="/>
+        <field:display field="closedBy" id="s_ee_itcollege_example_entities_AdminUnitType_closedBy" object="${adminunittype}" z="PDu+x4PMuiFITVvXCYy2CanSpFY="/>
+        <field:display date="true" dateTimePattern="${adminUnitType_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_AdminUnitType_closedDate" object="${adminunittype}" z="jkV5qKIKjMuhkQRH4IR6zrYKEzc="/>
+    </page:show>
+</div>

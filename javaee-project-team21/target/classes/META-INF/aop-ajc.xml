@@ -1,0 +1,30 @@
+<aspectj>
+<aspects>
+<aspect name="ee.itcollege.example.entities.RegimentHierarchy_Roo_ToString"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitType_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.entities.AdminUnit_Roo_ToString"/>
+<aspect name="ee.itcollege.example.web.RegimentController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.entities.RegimentHierarchy_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitHierarchy_Roo_Entity"/>
+<aspect name="ee.itcollege.example.entities.RegimentHierarchy_Roo_Entity"/>
+<aspect name="ee.itcollege.example.web.AdminUnitHierarchyController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitTypeHierarchy_Roo_Entity"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitHierarchy_Roo_ToString"/>
+<aspect name="ee.itcollege.example.web.AdminUnitTypeController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.web.AdminUnitTypeHierarchyController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitHierarchy_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.entities.Regiment_Roo_ToString"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitTypeHierarchy_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.entities.Regiment_Roo_Entity"/>
+<aspect name="ee.itcollege.example.entities.Regiment_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitTypeHierarchy_Roo_ToString"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitType_Roo_Entity"/>
+<aspect name="ee.itcollege.example.entities.AdminUnit_Roo_Entity"/>
+<aspect name="ee.itcollege.example.entities.AdminUnit_Roo_Configurable"/>
+<aspect name="ee.itcollege.example.web.AdminUnitController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.web.RegimentHierarchyController_Roo_Controller"/>
+<aspect name="ee.itcollege.example.entities.AdminUnitType_Roo_ToString"/>
+</aspects>
+</aspectj>
+

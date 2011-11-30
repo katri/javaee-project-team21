@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_example_entities_Regiment" modelAttribute="regiment" path="/regiments" versionField="Version" z="7EkzBIFNAWnjk+VgZEfPxtJhtnI=">
+        <field:input field="name" id="c_ee_itcollege_example_entities_Regiment_name" z="uaCVhPl8q58vbCaXLFquS8ciUIE="/>
+        <field:input field="code" id="c_ee_itcollege_example_entities_Regiment_code" z="4T+6wAiiIvHE6YC9rzv5we6+nt4="/>
+        <field:input field="comment" id="c_ee_itcollege_example_entities_Regiment_comment" z="DYTBk/HS0VSj1Ae6UhJcwy96b2s="/>
+        <field:datetime dateTimePattern="${regiment_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_Regiment_fromDate" z="bfeDR192K1t9gXIcwJg4GZETezk="/>
+        <field:datetime dateTimePattern="${regiment_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_Regiment_untilDate" z="cCP1VvBVbLEr1DOvJw2c789fA1Y="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_Regiment_openedBy" z="E538RL4aX8kPXxIQAA8ZemZu4EU="/>
+        <field:datetime dateTimePattern="${regiment_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_Regiment_openedDate" z="BP4J5uT6Svn1DZR5V648djBN7rA="/>
+        <field:input field="changedBy" id="c_ee_itcollege_example_entities_Regiment_changedBy" z="Yd0an2WmqqZGOxsd3WgZgWplxbA="/>
+        <field:datetime dateTimePattern="${regiment_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_Regiment_changedDate" z="Tw9JQw6gG9L2pertKUuprvBwEEg="/>
+        <field:input field="closedBy" id="c_ee_itcollege_example_entities_Regiment_closedBy" z="UXyb80KKvb2IH8j4bIVRIQZRLSg="/>
+        <field:datetime dateTimePattern="${regiment_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_Regiment_closedDate" z="CVgZPy1z/Grvn8aQ0QoG7hgAzIc="/>
+        <field:select field="adminUnit" id="c_ee_itcollege_example_entities_Regiment_adminUnit" itemValue="id" items="${adminunits}" path="/adminunits" z="0IOVn/JQVj44voSCgFLGw9J5/vU="/>
+    </form:update>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_example_entities_AdminUnit" items="${adminunits}" z="yd4AnNPEpa0759WEmT05PF2d+dU=">
+        <table:table data="${adminunits}" id="l_ee_itcollege_example_entities_AdminUnit" path="/adminunits" z="eXVbLA3N0OAuOp6kY5YzHyGOVMs=">
+            <table:column id="c_ee_itcollege_example_entities_AdminUnit_name" property="name" z="dYcS+Q/mdRktl6Affw1xmeCYX/s="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnit_code" property="code" z="gVokgrQr9DpcdqCmkiK579ktgVo="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnit_comment" property="comment" z="Mjm5tLR1UPnKmXxj+i8u3XrnWb0="/>
+            <table:column date="true" dateTimePattern="${adminUnit_fromdate_date_format}" id="c_ee_itcollege_example_entities_AdminUnit_fromDate" property="fromDate" z="Hxtss1HxiPw9CekQcfW5P0hT6XQ="/>
+            <table:column date="true" dateTimePattern="${adminUnit_untildate_date_format}" id="c_ee_itcollege_example_entities_AdminUnit_untilDate" property="untilDate" z="JeP9Sx6Qj7wnUsB0AgwfVcS9j5s="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnit_openedBy" property="openedBy" z="Pvtvx/Cy5CWP7Iv/koMorJSNSlY="/>
+        </table:table>
+    </page:list>
+</div>

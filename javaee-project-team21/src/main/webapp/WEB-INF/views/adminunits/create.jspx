@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ee_itcollege_example_entities_AdminUnit" modelAttribute="adminUnit" path="/adminunits" render="${empty dependencies}" z="rAfhmPBjzag+jWy2FRbDTZgocJA=">
+        <field:input field="name" id="c_ee_itcollege_example_entities_AdminUnit_name" z="393tCfkJ//vq8XAIux2kI38S2Jk="/>
+        <field:input field="code" id="c_ee_itcollege_example_entities_AdminUnit_code" z="oswRn+JxzJT8QDpfO2lUNO2GCkw="/>
+        <field:input field="comment" id="c_ee_itcollege_example_entities_AdminUnit_comment" z="93MT57a8Ni2UnGTuXRFgY9o9hDs="/>
+        <field:datetime dateTimePattern="${adminUnit_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_AdminUnit_fromDate" z="nv/cL+B5aEx08d8tdKpvIwVKCkk="/>
+        <field:datetime dateTimePattern="${adminUnit_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_AdminUnit_untilDate" z="q3JCJn6TX+UcJrG05y/lLdcwv5g="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnit_openedBy" z="xz+bWfheqlFnAq2f1AlEbQ71v4k="/>
+        <field:datetime dateTimePattern="${adminUnit_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnit_openedDate" z="EI8oaStS18FMuSYgG3PsdXLWeRw="/>
+        <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnit_changedBy" z="ah8risAwM4tMYLGKexRwWbhgbAc="/>
+        <field:datetime dateTimePattern="${adminUnit_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_AdminUnit_changedDate" z="jcL+tfxYkYkPGft1QeGXZK+omt0="/>
+        <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnit_closedBy" z="pF4d5ZzmduafDT4CrzVzfug9CwQ="/>
+        <field:datetime dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnit_closedDate" z="qBOId1aDyAtTU76dYrWTviAMsPY="/>
+        <field:simple field="regiments" id="c_ee_itcollege_example_entities_AdminUnit_regiments" messageCode="entity_reference_not_managed" messageCodeAttribute="Regiment" z="w6a5ToqAdhrK5Nb6x5esmXRFmYk="/>
+        <field:select field="adminUnitType" id="c_ee_itcollege_example_entities_AdminUnit_adminUnitType" itemValue="id" items="${adminunittypes}" path="/adminunittypes" z="9kh9VZnAl8kq0fkQN+hKh8xuPVk="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_AdminUnit" render="${not empty dependencies}" z="g4bDpGGfw7L+cy4tnRAx82Ix18w="/>
+</div>

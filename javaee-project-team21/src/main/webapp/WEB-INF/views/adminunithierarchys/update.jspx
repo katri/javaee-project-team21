@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_example_entities_AdminUnitHierarchy" modelAttribute="adminUnitHierarchy" path="/adminunithierarchys" versionField="Version" z="eTk7me0w7RdvGeBbSru0YjOE0oQ=">
+        <field:input field="comment" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_comment" z="flynyPV93Ihm2WEAORfh+OthqYg="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_fromDate" z="ksfps7jzfqVceTacKqFB0+zj42s="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_untilDate" z="kBr1OPKdp4/Mk08s0DGa/o50vMY="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedBy" z="DVtEQkbJanpQEe7nv7blXDy3eNg="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedDate" z="uE3WKdWXl28vaSNRPB7Z41LPUYE="/>
+        <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_changedBy" z="HnOw3YYTT/+OCDvaETD/B/8oUvo="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_changedDate" z="49fy4BZyAuPfhfskQ+XSAhAZQKY="/>
+        <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_closedBy" z="IVEiIuvlY+CA6nf1ON4cCXRJ2vw="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_closedDate" z="SVAi1uKxuYngAjLUkhXEmgcEz2c="/>
+        <field:select field="adminUnit" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_adminUnit" itemValue="id" items="${adminunits}" path="/adminunits" z="gDm+A0JGCpCibMGnLRiYlL2H1Fc="/>
+    </form:update>
+</div>

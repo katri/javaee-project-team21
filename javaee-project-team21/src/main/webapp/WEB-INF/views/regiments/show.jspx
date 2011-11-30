@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_example_entities_Regiment" object="${regiment}" path="/regiments" z="FJ1oQjDm9G1qElWPQEb7WOAQgYM=">
+        <field:display field="name" id="s_ee_itcollege_example_entities_Regiment_name" object="${regiment}" z="OMDk7R6frIIXWnkr3BQyhGJD6gg="/>
+        <field:display field="code" id="s_ee_itcollege_example_entities_Regiment_code" object="${regiment}" z="yrUZqZRzWe+WIHPDEIMC112Ony4="/>
+        <field:display field="comment" id="s_ee_itcollege_example_entities_Regiment_comment" object="${regiment}" z="IWLLp1C/ciL9ukgx7thrMjJ8Hnc="/>
+        <field:display date="true" dateTimePattern="${regiment_fromdate_date_format}" field="fromDate" id="s_ee_itcollege_example_entities_Regiment_fromDate" object="${regiment}" z="rLK7uH0hBOZPFhx86JbQbUc4wK4="/>
+        <field:display date="true" dateTimePattern="${regiment_untildate_date_format}" field="untilDate" id="s_ee_itcollege_example_entities_Regiment_untilDate" object="${regiment}" z="9ACcA6NU/Yw6B8D0yAwfq0CoSoE="/>
+        <field:display field="openedBy" id="s_ee_itcollege_example_entities_Regiment_openedBy" object="${regiment}" z="ioaf6mWpC3PyNxcKo2cXdOUmZpQ="/>
+        <field:display date="true" dateTimePattern="${regiment_openeddate_date_format}" field="openedDate" id="s_ee_itcollege_example_entities_Regiment_openedDate" object="${regiment}" z="4asEuDIPP70TaoS5hcXnpD5/JYc="/>
+        <field:display field="changedBy" id="s_ee_itcollege_example_entities_Regiment_changedBy" object="${regiment}" z="RpiTrTcNFnJfKYekxYuShhclHm0="/>
+        <field:display date="true" dateTimePattern="${regiment_changeddate_date_format}" field="changedDate" id="s_ee_itcollege_example_entities_Regiment_changedDate" object="${regiment}" z="7xPiDQRVo8HF5ztCxKFxD5dAIxE="/>
+        <field:display field="closedBy" id="s_ee_itcollege_example_entities_Regiment_closedBy" object="${regiment}" z="kwBetd9/yMDV00o+7f7cAGRzo9Y="/>
+        <field:display date="true" dateTimePattern="${regiment_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_Regiment_closedDate" object="${regiment}" z="czWbaRkaKuMD/dxz0/C0sQ4iV4s="/>
+        <field:display field="adminUnit" id="s_ee_itcollege_example_entities_Regiment_adminUnit" object="${regiment}" z="RsLeSxl8u813YsDLhagdQWkWqnE="/>
+    </page:show>
+</div>

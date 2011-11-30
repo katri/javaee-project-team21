@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_regiment" z="hTn/nE9HBbjzGQr+nXX5K/HjpDY=">
+            <menu:item id="i_regiment_new" messageCode="global_menu_new" url="/regiments?form" z="4voy2dv2RC35fqRlSuJn/ZaA71E="/>
+            <menu:item id="i_regiment_list" messageCode="global_menu_list" url="/regiments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="+aTCHHUz8gabBJBgyJEJcBipoSs="/>
+        </menu:category>
+        <menu:category id="c_adminunit" z="Ll9hGVeS1seuKw7O29eBEicWGTE=">
+            <menu:item id="i_adminunit_new" messageCode="global_menu_new" url="/adminunits?form" z="3l2wLLDQ+AyukjG3RqZOeSi9MDw="/>
+            <menu:item id="i_adminunit_list" messageCode="global_menu_list" url="/adminunits?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ukU+qNeEaYwXLG+6uCXRSUofrjc="/>
+        </menu:category>
+        <menu:category id="c_adminunittype" z="yyDMWaNT+JIRs0mEcAoVMbmAbPs=">
+            <menu:item id="i_adminunittype_new" messageCode="global_menu_new" url="/adminunittypes?form" z="FxYZyVb8ikchoBu5fRV2ESOBt9Y="/>
+            <menu:item id="i_adminunittype_list" messageCode="global_menu_list" url="/adminunittypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nKJS6MN55vFsph0Wq6NvFO6fJAA="/>
+        </menu:category>
+        <menu:category id="c_adminunithierarchy" z="WMpdNZw1RT/o3VMnaV7jbnqWw4A=">
+            <menu:item id="i_adminunithierarchy_new" messageCode="global_menu_new" url="/adminunithierarchys?form" z="FpBDerVxDt4ZPUOr3sJIQEBntzE="/>
+            <menu:item id="i_adminunithierarchy_list" messageCode="global_menu_list" url="/adminunithierarchys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QWdc1x39GD3xX6IgQlF8do8wnO4="/>
+        </menu:category>
+        <menu:category id="c_regimenthierarchy" z="ckT/Xf9m+0Ej/R9TfRYIVbueGCw=">
+            <menu:item id="i_regimenthierarchy_new" messageCode="global_menu_new" url="/regimenthierarchys?form" z="W+ArokmDJgFTEa64ytQgsfr6Ghk="/>
+            <menu:item id="i_regimenthierarchy_list" messageCode="global_menu_list" url="/regimenthierarchys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QENvNdQ8Yn1jzIvQE2J0U4StPQY="/>
+        </menu:category>
+        <menu:category id="c_adminunittypehierarchy" z="H0bl8MiMO6WOLVNEvGcmQC0c6mY=">
+            <menu:item id="i_adminunittypehierarchy_new" messageCode="global_menu_new" url="/adminunittypehierarchys?form" z="WLvdE0iX5l79gB6j9KvKsyFe280="/>
+            <menu:item id="i_adminunittypehierarchy_list" messageCode="global_menu_list" url="/adminunittypehierarchys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4CvzD4UeBxqJYCYq5g5wD9qns+o="/>
+        </menu:category>
+    </menu:menu>
+</div>

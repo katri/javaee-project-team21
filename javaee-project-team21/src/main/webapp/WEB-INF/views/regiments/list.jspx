@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_example_entities_Regiment" items="${regiments}" z="KD+vvFElno7COFnqu91oPGhdGg4=">
+        <table:table data="${regiments}" id="l_ee_itcollege_example_entities_Regiment" path="/regiments" z="o/werlzr11S4a1x7jrEyHno32EY=">
+            <table:column id="c_ee_itcollege_example_entities_Regiment_name" property="name" z="DtaGXsi/ivYz4ZEe0s1Vmewf0fk="/>
+            <table:column id="c_ee_itcollege_example_entities_Regiment_code" property="code" z="XyrGd6SnO3n2WXQsu5ypM04YQoU="/>
+            <table:column id="c_ee_itcollege_example_entities_Regiment_comment" property="comment" z="HfJdbi7NuJWACEiuWdHnv545m6Y="/>
+            <table:column date="true" dateTimePattern="${regiment_fromdate_date_format}" id="c_ee_itcollege_example_entities_Regiment_fromDate" property="fromDate" z="dSROAqw52N7WpEvhfP+mw0RJTgs="/>
+            <table:column date="true" dateTimePattern="${regiment_untildate_date_format}" id="c_ee_itcollege_example_entities_Regiment_untilDate" property="untilDate" z="ei75MgJy4azyk0CmQ76tr4NWUFo="/>
+            <table:column id="c_ee_itcollege_example_entities_Regiment_openedBy" property="openedBy" z="BpP+ElYGZ2QTOtfVmZWEw3pN1/I="/>
+        </table:table>
+    </page:list>
+</div>

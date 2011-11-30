@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_example_entities_AdminUnitTypeHierarchy" items="${adminunittypehierarchys}" z="j5a6ZYOVaFAP7FPK6IOXMfh/244=">
+        <table:table data="${adminunittypehierarchys}" id="l_ee_itcollege_example_entities_AdminUnitTypeHierarchy" path="/adminunittypehierarchys" z="B7Uj6jcgazrBrk37CjIkCTkSxZ0=">
+            <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_comment" property="comment" z="5NHDF3mxJ+6Qxwsi+pt64q6gB7I="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedBy" property="openedBy" z="dk2h21KjNyLccbgdv2NrBkL5mHQ="/>
+            <table:column date="true" dateTimePattern="${adminUnitTypeHierarchy_openeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedDate" property="openedDate" z="Ba/Wn1FiUR8OSQGK6kBtFgiUKF4="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedBy" property="changedBy" z="IvKWU/kuUyPj8+osRuxDMlbu1Ww="/>
+            <table:column date="true" dateTimePattern="${adminUnitTypeHierarchy_changeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedDate" property="changedDate" z="2k4xWq20pJR8xrDskBIRXDm7abc="/>
+            <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" property="closedBy" z="nbMaTbLEwj+7DJHNTqm4Jx3RIno="/>
+        </table:table>
+    </page:list>
+</div>

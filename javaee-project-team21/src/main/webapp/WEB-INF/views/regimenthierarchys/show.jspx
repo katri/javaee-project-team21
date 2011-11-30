@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_example_entities_RegimentHierarchy" object="${regimenthierarchy}" path="/regimenthierarchys" z="7B0GZUoWccowkaUYyT3CM9M2A4g=">
+        <field:display field="comment" id="s_ee_itcollege_example_entities_RegimentHierarchy_comment" object="${regimenthierarchy}" z="qYjhx3Com0xzux5fqjr5LePdVJg="/>
+        <field:display date="true" dateTimePattern="${regimentHierarchy_fromdate_date_format}" field="fromDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_fromDate" object="${regimenthierarchy}" z="Orlmb+tzo9sfhVC29P7hnjyoxwY="/>
+        <field:display date="true" dateTimePattern="${regimentHierarchy_untildate_date_format}" field="untilDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_untilDate" object="${regimenthierarchy}" z="U8C75RtXPthA1+sr29ScZF1kj/Y="/>
+        <field:display field="openedBy" id="s_ee_itcollege_example_entities_RegimentHierarchy_openedBy" object="${regimenthierarchy}" z="D7JqN2mWihnG9m2Bxl6sOxK/ves="/>
+        <field:display date="true" dateTimePattern="${regimentHierarchy_openeddate_date_format}" field="openedDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_openedDate" object="${regimenthierarchy}" z="6PJzBfsw3WY+JTrw4VFMOPxgOl0="/>
+        <field:display field="changedBy" id="s_ee_itcollege_example_entities_RegimentHierarchy_changedBy" object="${regimenthierarchy}" z="eaU55plJrAv73bjqVT9JxWu9UHg="/>
+        <field:display date="true" dateTimePattern="${regimentHierarchy_changeddate_date_format}" field="changedDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_changedDate" object="${regimenthierarchy}" z="zY9XiC6DDaab1ESeUjkNZCdbWIo="/>
+        <field:display field="closedBy" id="s_ee_itcollege_example_entities_RegimentHierarchy_closedBy" object="${regimenthierarchy}" z="/A/V9uH2DD8URnujXNmL9FyBjnA="/>
+        <field:display date="true" dateTimePattern="${regimentHierarchy_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_closedDate" object="${regimenthierarchy}" z="yQJNuigA5HcIT/U172XJ5EkKKw8="/>
+        <field:display field="regiment" id="s_ee_itcollege_example_entities_RegimentHierarchy_regiment" object="${regimenthierarchy}" z="cK429MrEa0jlS0zRJLIRdosn1x4="/>
+    </page:show>
+</div>

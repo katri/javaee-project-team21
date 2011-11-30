@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_example_entities_AdminUnitTypeHierarchy" object="${adminunittypehierarchy}" path="/adminunittypehierarchys" z="cXQQJYNI6dZLnQWX56UgaG739Vo=">
+        <field:display field="comment" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_comment" object="${adminunittypehierarchy}" z="119an33zYPnD+AF4lPzMm09r0As="/>
+        <field:display field="openedBy" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedBy" object="${adminunittypehierarchy}" z="lmzCW+lYxwNFVnJOb8fRmEQTWm0="/>
+        <field:display date="true" dateTimePattern="${adminUnitTypeHierarchy_openeddate_date_format}" field="openedDate" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedDate" object="${adminunittypehierarchy}" z="Ygp1MDcHUlaqLruMzMotrsxWfaA="/>
+        <field:display field="changedBy" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedBy" object="${adminunittypehierarchy}" z="59XSxzG5JyF+bpuP262y0jIl7wY="/>
+        <field:display date="true" dateTimePattern="${adminUnitTypeHierarchy_changeddate_date_format}" field="changedDate" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedDate" object="${adminunittypehierarchy}" z="qn008OZP+tqxIzVLjSk9IxoJmL8="/>
+        <field:display field="closedBy" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" object="${adminunittypehierarchy}" z="6U/JVfg6g2kweZ8A8CtyqnWlD+0="/>
+        <field:display date="true" dateTimePattern="${adminUnitTypeHierarchy_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedDate" object="${adminunittypehierarchy}" z="MzQ/XPyhZSqTM5r+Tv/jeDksyrk="/>
+        <field:display field="adminUnitType" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_adminUnitType" object="${adminunittypehierarchy}" z="UX5HGOnTVNOI79DYoDhI1xlMX9o="/>
+    </page:show>
+</div>
