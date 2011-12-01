@@ -18,6 +18,7 @@ import ee.itcollege.example.entities.RegimentHierarchy;
 import java.util.Collection;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @RooToString
@@ -28,12 +29,14 @@ public class Regiment {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
+	@Size(min=2, max=30)
 	@NotNull
-    private String name;
+	private String name;
     
 	@NotNull
 	private String code;
 
+	@Size(min=2, max=250)
     private String comment;
 
     @NotNull

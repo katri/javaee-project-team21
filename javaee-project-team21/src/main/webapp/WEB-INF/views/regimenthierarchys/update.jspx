@@ -3,11 +3,11 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ee_itcollege_example_entities_RegimentHierarchy" modelAttribute="regimentHierarchy" path="/regimenthierarchys" versionField="Version" z="79lsQIQxWCcy+33AlA3NkifCiEE=">
-        <field:input field="comment" id="c_ee_itcollege_example_entities_RegimentHierarchy_comment" z="jTw1uh+4t5bf8FRTal1jBaZhup4="/>
-        <field:datetime dateTimePattern="${regimentHierarchy_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_fromDate" z="n9Twk6wV+G4On6gVI2a28Bqpnv8="/>
+        <field:textarea field="comment" id="c_ee_itcollege_example_entities_RegimentHierarchy_comment" required="true" z="+LwZsQSUkFQQQLlkknzvw1uUqA0="/>
+        <field:datetime dateTimePattern="${regimentHierarchy_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_fromDate" required="true" z="xFtLFzSYhzSGlA5haX1E+XHaWO4="/>
         <field:datetime dateTimePattern="${regimentHierarchy_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_untilDate" z="WG6GYlQqs3tNgYdkCyhrLySA+DU="/>
-        <field:input field="openedBy" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedBy" z="9FHb0RruEwIkq9017Sbl3p+/Pac="/>
-        <field:datetime dateTimePattern="${regimentHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedDate" z="Ra1PXaSGif+SRK60RS9EvzWQ50k="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedBy" required="true" z="t3yam28hSZDpLF8PM3/8ihp+DFE="/>
+        <field:datetime dateTimePattern="${regimentHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedDate" required="true" z="qhIlKifBHW/C6RshSyiQMFja7LI="/>
         <field:input field="changedBy" id="c_ee_itcollege_example_entities_RegimentHierarchy_changedBy" z="W67FcbhfpDvTeN+BndMBSPfVMyU="/>
         <field:datetime dateTimePattern="${regimentHierarchy_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_changedDate" z="41edq6cIFBMuxV+FcV3koGj4hcU="/>
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_RegimentHierarchy_closedBy" z="ptTS5mcQMncaZt7bZxVAYVX6G50="/>

@@ -11,6 +11,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
@@ -24,13 +26,20 @@ public class AdminUnit {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-    private String name;
+	@Size(min=2, max=30)
+	@NotNull
+	private String name;
     
-    private String code;
+	@Size(min=1, max=10)
+	@NotNull
+	private String code;
 
-    private String comment;
+	@Size(min=2, max=250)
+	@NotNull
+	private String comment;
 
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date fromDate;
 
@@ -38,9 +47,11 @@ public class AdminUnit {
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
-    private String openedBy;
+    @NotNull
+	private String openedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
+    @NotNull
+	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date openedDate;
     

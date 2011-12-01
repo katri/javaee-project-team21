@@ -3,11 +3,11 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_example_entities_AdminUnitHierarchy" modelAttribute="adminUnitHierarchy" path="/adminunithierarchys" render="${empty dependencies}" z="U0/8mynSx1b7puMBptN9rAfdaIE=">
-        <field:input field="comment" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_comment" z="flynyPV93Ihm2WEAORfh+OthqYg="/>
-        <field:datetime dateTimePattern="${adminUnitHierarchy_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_fromDate" z="ksfps7jzfqVceTacKqFB0+zj42s="/>
+        <field:textarea field="comment" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_comment" required="true" z="g/JAxfWC9I/xhiiv8RQ7izn/JWY="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_fromDate" required="true" z="23kIKoVS7gYl98Eokh42sxAADKM="/>
         <field:datetime dateTimePattern="${adminUnitHierarchy_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_untilDate" z="kBr1OPKdp4/Mk08s0DGa/o50vMY="/>
-        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedBy" z="DVtEQkbJanpQEe7nv7blXDy3eNg="/>
-        <field:datetime dateTimePattern="${adminUnitHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedDate" z="uE3WKdWXl28vaSNRPB7Z41LPUYE="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedBy" max="30" min="2" required="true" z="VIs8uakVIXZtxjtsUCGTLle0JA8="/>
+        <field:datetime dateTimePattern="${adminUnitHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_openedDate" required="true" z="XqfWt4uDADfQ9+eeDGN6GcCBiG4="/>
         <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_changedBy" z="HnOw3YYTT/+OCDvaETD/B/8oUvo="/>
         <field:datetime dateTimePattern="${adminUnitHierarchy_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_changedDate" z="49fy4BZyAuPfhfskQ+XSAhAZQKY="/>
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_closedBy" z="IVEiIuvlY+CA6nf1ON4cCXRJ2vw="/>

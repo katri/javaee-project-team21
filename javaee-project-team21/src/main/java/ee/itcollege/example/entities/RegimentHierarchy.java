@@ -14,6 +14,8 @@ import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.example.entities.Regiment;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @RooToString
@@ -23,9 +25,12 @@ public class RegimentHierarchy {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-    private String comment;
+	@Size(min=2, max=250)
+	@NotNull
+	private String comment;
 
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date fromDate;
 
@@ -33,9 +38,11 @@ public class RegimentHierarchy {
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
-    private String openedBy;
+    @NotNull
+	private String openedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
+    @NotNull
+	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date openedDate;
     

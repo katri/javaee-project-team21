@@ -14,6 +14,8 @@ import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.example.entities.AdminUnitType;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @RooToString
@@ -23,11 +25,16 @@ public class AdminUnitTypeHierarchy {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-    private String comment;
+	@Size(min=2, max=250)
+	@NotNull
+	private String comment;
     
-    private String openedBy;
+	@Size(min=2, max=30)
+	@NotNull
+	private String openedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date openedDate;
     
