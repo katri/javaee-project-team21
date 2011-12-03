@@ -61,7 +61,10 @@ public class RegimentHierarchy {
 	@ManyToOne
 	private Regiment regiment;
 
+	@ManyToOne
+	private Regiment subRegiment;
 
+	
 	public String getComment() {
 		return comment;
 	}
@@ -142,6 +145,12 @@ public class RegimentHierarchy {
 	    this.regiment = param;
 	}
     
-    
+	public Regiment getSubRegiment() {
+	    return subRegiment;
+	}
+
+	public void setSubRegiment(Regiment param) {
+	    this.subRegiment = param;
+	}    
 
 }

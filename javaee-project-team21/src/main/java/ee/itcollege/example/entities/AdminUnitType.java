@@ -75,6 +75,9 @@ public class AdminUnitType {
 	@OneToMany(mappedBy = "adminUnitType")
 	private Collection<AdminUnitTypeHierarchy> adminUnitTypeHierarchys;
 
+	@OneToMany(mappedBy = "subAdminUnitType")
+	private Collection<AdminUnitTypeHierarchy> subAdminUnitTypeHierarchys;
+
 
 	public String getName() {
 		return name;
@@ -178,5 +181,14 @@ public class AdminUnitType {
 
 	public void setAdminUnitTypeHierarchys(Collection<AdminUnitTypeHierarchy> param) {
 	    this.adminUnitTypeHierarchys = param;
+	}
+	
+
+	public Collection<AdminUnitTypeHierarchy> getSubAdminUnitTypeHierarchys() {
+	    return subAdminUnitTypeHierarchys;
+	}
+
+	public void setSubAdminUnitTypeHierarchys(Collection<AdminUnitTypeHierarchy> param) {
+	    this.subAdminUnitTypeHierarchys = param;
 	}
 }

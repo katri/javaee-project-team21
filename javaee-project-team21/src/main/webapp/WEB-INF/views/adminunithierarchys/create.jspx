@@ -13,6 +13,7 @@
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_closedBy" z="IVEiIuvlY+CA6nf1ON4cCXRJ2vw="/>
         <field:datetime dateTimePattern="${adminUnitHierarchy_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_closedDate" z="SVAi1uKxuYngAjLUkhXEmgcEz2c="/>
         <field:select field="adminUnit" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_adminUnit" itemValue="id" items="${adminunits}" path="/adminunits" z="gDm+A0JGCpCibMGnLRiYlL2H1Fc="/>
+        <field:select field="subUnit" id="c_ee_itcollege_example_entities_AdminUnitHierarchy_subUnit" itemValue="id" items="${adminunits}" path="/adminunits" z="aEW3A1zUVuXBReFo+nSZYqPqT3Y="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_AdminUnitHierarchy" render="${not empty dependencies}" z="b4ebnuun3itX/gtAtF2yngkRPPc="/>
 </div>

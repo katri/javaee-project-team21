@@ -53,6 +53,8 @@ public class AdminUnitTypeHierarchy {
 	@ManyToOne
 	private AdminUnitType adminUnitType;
 
+	@ManyToOne
+	private AdminUnitType subAdminUnitType;
 
 	public String getComment() {
 		return comment;
@@ -118,6 +120,13 @@ public class AdminUnitTypeHierarchy {
 	    this.adminUnitType = param;
 	}
     
-    
+	public AdminUnitType getSubAdminUnitType() {
+	    return subAdminUnitType;
+	}
+
+	public void setSubAdminUnitType(AdminUnitType param) {
+	    this.subAdminUnitType = param;
+	}
+        
 
 }

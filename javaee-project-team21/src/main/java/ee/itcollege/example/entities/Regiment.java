@@ -74,6 +74,9 @@ public class Regiment {
 	@OneToMany(mappedBy = "regiment")
 	private Collection<RegimentHierarchy> regimentHierarchys;
 
+	@OneToMany(mappedBy = "subRegiment")
+	private Collection<RegimentHierarchy> subRegimentHierarchys;
+	
 	public String getName() {
 		return name;
 	}
@@ -176,5 +179,13 @@ public class Regiment {
 
 	public void setRegimentHierarchys(Collection<RegimentHierarchy> param) {
 	    this.regimentHierarchys = param;
+	}
+	
+	public Collection<RegimentHierarchy> getSubRegimentHierarchys() {
+	    return subRegimentHierarchys;
+	}
+
+	public void setSubRegimentHierarchys(Collection<RegimentHierarchy> param) {
+	    this.subRegimentHierarchys = param;
 	}
 }

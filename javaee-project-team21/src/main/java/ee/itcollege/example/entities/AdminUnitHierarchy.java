@@ -19,7 +19,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @Entity
 @RooToString
 @RooEntity
-public class AdminUnitHierarchy {
+public class AdminUnitHierarchy{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -61,6 +61,9 @@ public class AdminUnitHierarchy {
 
 	@ManyToOne
 	private AdminUnit adminUnit;
+
+	@ManyToOne
+	private AdminUnit subUnit;
 
 	public String getComment() {
 		return comment;
@@ -140,6 +143,14 @@ public class AdminUnitHierarchy {
 
 	public void setAdminUnit(AdminUnit param) {
 	    this.adminUnit = param;
+	}
+
+	public AdminUnit getSubUnit() {
+		return subUnit;
+	}
+
+	public void setSubUnit(AdminUnit subUnit) {
+		this.subUnit = subUnit;
 	}
     
     

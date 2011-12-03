@@ -5,18 +5,18 @@
     <form:create id="fc_ee_itcollege_example_entities_AdminUnit" modelAttribute="adminUnit" path="/adminunits" render="${empty dependencies}" z="rAfhmPBjzag+jWy2FRbDTZgocJA=">
         <field:input field="name" id="c_ee_itcollege_example_entities_AdminUnit_name" max="30" min="2" required="true" z="ZrPcNbVKBQ6FkoMcgODoSHmDCNI="/>
         <field:input field="code" id="c_ee_itcollege_example_entities_AdminUnit_code" max="10" min="1" required="true" z="EWVqOst6Mx0N1ov75qFng+B9Alk="/>
-        <field:textarea field="comment" id="c_ee_itcollege_example_entities_AdminUnit_comment" required="true" z="vqC9ZIzT4qrXWlDI8+HLIAi2L6k="/>
+        <field:textarea field="comment" id="c_ee_itcollege_example_entities_AdminUnit_comment" z="80b93jgVkf6GEeRJrN9M59EEQB4="/>
         <field:datetime dateTimePattern="${adminUnit_fromdate_date_format}" field="fromDate" id="c_ee_itcollege_example_entities_AdminUnit_fromDate" required="true" z="3f4gC0PZSRiZqvHAK9imXU/J028="/>
         <field:datetime dateTimePattern="${adminUnit_untildate_date_format}" field="untilDate" id="c_ee_itcollege_example_entities_AdminUnit_untilDate" z="q3JCJn6TX+UcJrG05y/lLdcwv5g="/>
         <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnit_openedBy" required="true" z="cyg2eunN+bR1sDLcPKfTTIkzU2k="/>
         <field:datetime dateTimePattern="${adminUnit_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnit_openedDate" required="true" z="SuoxvAW/xQJ66WGh8CQY+Ch3EM8="/>
         <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnit_changedBy" z="ah8risAwM4tMYLGKexRwWbhgbAc="/>
-        <field:datetime dateTimePattern="${adminUnit_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_AdminUnit_changedDate" z="jcL+tfxYkYkPGft1QeGXZK+omt0="/>
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnit_closedBy" z="pF4d5ZzmduafDT4CrzVzfug9CwQ="/>
-        <field:datetime dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnit_closedDate" z="qBOId1aDyAtTU76dYrWTviAMsPY="/>
+        <field:datetime dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnit_closedDate" required="true" z="8ATw7TTU6nVXuiaRhAWBNDtt/MQ="/>
         <field:simple field="regiments" id="c_ee_itcollege_example_entities_AdminUnit_regiments" messageCode="entity_reference_not_managed" messageCodeAttribute="Regiment" z="w6a5ToqAdhrK5Nb6x5esmXRFmYk="/>
         <field:select field="adminUnitType" id="c_ee_itcollege_example_entities_AdminUnit_adminUnitType" itemValue="id" items="${adminunittypes}" path="/adminunittypes" z="9kh9VZnAl8kq0fkQN+hKh8xuPVk="/>
         <field:simple field="adminUnitHierarchys" id="c_ee_itcollege_example_entities_AdminUnit_adminUnitHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Hierarchy" z="mxuRyTcZ5NgNHENvQCHdXxeubE4="/>
+        <field:simple field="subUnitHierarchys" id="c_ee_itcollege_example_entities_AdminUnit_subUnitHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Hierarchy" z="o0jX17wlU+4SzDqFQMLTZtWy/uc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_AdminUnit" render="${not empty dependencies}" z="g4bDpGGfw7L+cy4tnRAx82Ix18w="/>
 </div>

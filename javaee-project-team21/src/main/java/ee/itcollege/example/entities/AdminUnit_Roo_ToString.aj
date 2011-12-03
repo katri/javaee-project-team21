@@ -12,7 +12,6 @@ privileged aspect AdminUnit_Roo_ToString {
         sb.append("AdminUnitHierarchys: ").append(getAdminUnitHierarchys() == null ? "null" : getAdminUnitHierarchys().size()).append(", ");
         sb.append("AdminUnitType: ").append(getAdminUnitType()).append(", ");
         sb.append("ChangedBy: ").append(getChangedBy()).append(", ");
-        sb.append("ChangedDate: ").append(getChangedDate()).append(", ");
         sb.append("ClosedBy: ").append(getClosedBy()).append(", ");
         sb.append("ClosedDate: ").append(getClosedDate()).append(", ");
         sb.append("Code: ").append(getCode()).append(", ");
@@ -23,6 +22,7 @@ privileged aspect AdminUnit_Roo_ToString {
         sb.append("OpenedBy: ").append(getOpenedBy()).append(", ");
         sb.append("OpenedDate: ").append(getOpenedDate()).append(", ");
         sb.append("Regiments: ").append(getRegiments() == null ? "null" : getRegiments().size()).append(", ");
+        sb.append("SubUnitHierarchys: ").append(getSubUnitHierarchys() == null ? "null" : getSubUnitHierarchys().size()).append(", ");
         sb.append("UntilDate: ").append(getUntilDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

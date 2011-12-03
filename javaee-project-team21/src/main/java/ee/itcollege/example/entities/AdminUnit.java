@@ -21,6 +21,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @Entity
 @RooToString
 @RooEntity
+
 public class AdminUnit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -35,7 +36,6 @@ public class AdminUnit {
 	private String code;
 
 	@Size(min=2, max=250)
-	@NotNull
 	private String comment;
 
 	@NotNull
@@ -63,9 +63,10 @@ public class AdminUnit {
     
     private String closedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
+    //@Temporal(TemporalType.TIMESTAMP)
+    @NotNull
     @DateTimeFormat(style = "M-")
-    private Date closedDate;
+    private Date closedDate = notDeleted;
 
 	@OneToMany(mappedBy = "adminUnit")
 	private Collection<Regiment> regiments;
@@ -76,6 +77,10 @@ public class AdminUnit {
 	@OneToMany(mappedBy = "adminUnit")
 	private Collection<AdminUnitHierarchy> adminUnitHierarchys;
 
+	@OneToMany(mappedBy = "subUnit")
+	private Collection<AdminUnitHierarchy> subUnitHierarchys;
+
+	
 	public String getName() {
 		return name;
 	}
@@ -140,7 +145,7 @@ public class AdminUnit {
 		this.changedBy = changedBy;
 	}
 
-	public Date getChangedDate() {
+	protected Date getChangedDate() {
 		return changedDate;
 	}
 
@@ -186,5 +191,22 @@ public class AdminUnit {
 
 	public void setAdminUnitHierarchys(Collection<AdminUnitHierarchy> param) {
 	    this.adminUnitHierarchys = param;
+	}
+
+	public Collection<AdminUnitHierarchy> getSubUnitHierarchys() {
+		return subUnitHierarchys;
+	}
+
+	public void setSubUnitHierarchys(
+			Collection<AdminUnitHierarchy> subUnitHierarchys) {
+		this.subUnitHierarchys = subUnitHierarchys;
+	}
+	
+	protected static final Date notDeleted = new Date(253402207200000L);
+
+	protected static Date effectiveDate() {
+
+	return new Date();
+
 	}
 }
