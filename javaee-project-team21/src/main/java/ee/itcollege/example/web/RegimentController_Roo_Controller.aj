@@ -96,11 +96,6 @@ privileged aspect RegimentController_Roo_Controller {
         return "redirect:/regiments";
     }
     
-    @ModelAttribute("adminunits")
-    public Collection<AdminUnit> RegimentController.populateAdminUnits() {
-        return AdminUnit.findAllAdminUnits();
-    }
-    
     @ModelAttribute("regiments")
     public Collection<Regiment> RegimentController.populateRegiments() {
         return Regiment.findAllRegiments();

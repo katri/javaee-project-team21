@@ -36,7 +36,7 @@ public class Regiment {
 	@NotNull
 	private String code;
 
-	@Size(min=2, max=250)
+	@Size(max=250)
     private String comment;
 
     @NotNull

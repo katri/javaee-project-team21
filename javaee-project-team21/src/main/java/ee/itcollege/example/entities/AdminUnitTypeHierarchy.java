@@ -25,7 +25,7 @@ public class AdminUnitTypeHierarchy {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@Size(min=2, max=250)
+	@Size(max=250)
 	@NotNull
 	private String comment;
     

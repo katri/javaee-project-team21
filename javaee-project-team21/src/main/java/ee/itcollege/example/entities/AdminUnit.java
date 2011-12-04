@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
@@ -37,7 +38,7 @@ public class AdminUnit {
 	@NotNull
 	private String code;
 
-	@Size(min=2, max=250)
+	@Size(max=250)
 	private String comment;
 
 	@NotNull
@@ -176,9 +177,19 @@ public class AdminUnit {
 	}
 
 	public void setRegiments(Collection<Regiment> param) {
-	    this.regiments = param;
+		if(param == null) {
+			this.regiments = new ArrayList<Regiment>();
+			} else {
+				this.regiments=param;				
+			}
+			for(Regiment b: this.regiments) {
+				if(b.getAdminUnit() !=this)
+				{
+					b.setAdminUnit(this);
+				}
+		}
 	}
-
+   	
 	public AdminUnitType getAdminUnitType() {
 	    return adminUnitType;
 	}

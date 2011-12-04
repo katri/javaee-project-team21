@@ -36,7 +36,7 @@ public class AdminUnitType {
 	@NotNull
 	private String code;
 
-	@Size(min=2, max=250)
+	@Size(max=250)
 	@NotNull
 	private String comment;
 
