@@ -4,82 +4,10 @@
 package ee.itcollege.example.entities;
 
 import ee.itcollege.example.entities.Regiment;
-import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Version;
-import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect Regiment_Roo_Entity {
-    
-    @PersistenceContext
-    transient EntityManager Regiment.entityManager;
-    
-    @Version
-    @Column(name = "version")
-    private Integer Regiment.version;
-    
-    public Long Regiment.getId() {
-        return this.id;
-    }
-    
-    public void Regiment.setId(Long id) {
-        this.id = id;
-    }
-    
-    public Integer Regiment.getVersion() {
-        return this.version;
-    }
-    
-    public void Regiment.setVersion(Integer version) {
-        this.version = version;
-    }
-    
-    @Transactional
-    public void Regiment.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void Regiment.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            Regiment attached = Regiment.findRegiment(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void Regiment.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void Regiment.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
-    }
-    
-    @Transactional
-    public Regiment Regiment.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        Regiment merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
-    }
-    
-    public static final EntityManager Regiment.entityManager() {
-        EntityManager em = new Regiment().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
     
     public static long Regiment.countRegiments() {
         return entityManager().createQuery("SELECT COUNT(o) FROM Regiment o", Long.class).getSingleResult();

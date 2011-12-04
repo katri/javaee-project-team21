@@ -2,6 +2,9 @@
 
 import java.util.Date;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
 import javax.persistence.Temporal;
@@ -19,6 +22,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
  //public class BaseEntity {
 public abstract class BaseEntity {
 
+		@Id
+		@GeneratedValue(strategy = GenerationType.AUTO)
+		private Long id;
+	 
 	private String openedBy;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -26,6 +33,7 @@ public abstract class BaseEntity {
     private Date openedDate = getDateTime();
 	
 
+	
 	// getter & setter - ei muuda!
 	
 	public String getOpenedBy() {
@@ -43,7 +51,6 @@ public abstract class BaseEntity {
 	public void setOpenedDate(Date openedDate) {
 		this.openedDate = openedDate;
 	}
-
 	
 	@PrePersist
 	public void setCreated() {
@@ -64,7 +71,7 @@ public abstract class BaseEntity {
     }
 
 	
-	
+	public static final Date notDeleted = new Date(253402207200000L);
 
 
 	

@@ -14,6 +14,7 @@ privileged aspect RegimentHierarchy_Roo_ToString {
         sb.append("ClosedBy: ").append(getClosedBy()).append(", ");
         sb.append("ClosedDate: ").append(getClosedDate()).append(", ");
         sb.append("Comment: ").append(getComment()).append(", ");
+        sb.append("DateTime: ").append(getDateTime()).append(", ");
         sb.append("FromDate: ").append(getFromDate()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("OpenedBy: ").append(getOpenedBy()).append(", ");

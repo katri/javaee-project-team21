@@ -16,6 +16,7 @@ privileged aspect AdminUnit_Roo_ToString {
         sb.append("ClosedDate: ").append(getClosedDate()).append(", ");
         sb.append("Code: ").append(getCode()).append(", ");
         sb.append("Comment: ").append(getComment()).append(", ");
+        sb.append("DateTime: ").append(getDateTime()).append(", ");
         sb.append("FromDate: ").append(getFromDate()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Name: ").append(getName()).append(", ");

@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_example_entities_RegimentHierarchy" items="${regimenthierarchys}" z="pr2saHL/5j9jrcItRK7w3thdTF8=">
         <table:table data="${regimenthierarchys}" id="l_ee_itcollege_example_entities_RegimentHierarchy" path="/regimenthierarchys" z="r9B8oqA2vafUUZs22+BGT4HixIA=">
+            <table:column id="c_ee_itcollege_example_entities_RegimentHierarchy_openedBy" property="openedBy" z="6oJqUm9zkIX6kSlkj0Lx5Q7pvVk="/>
+            <table:column date="true" dateTimePattern="${regimentHierarchy_openeddate_date_format}" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedDate" property="openedDate" z="9BJ/OIXE+v/mcAK/npyX6JET8lw="/>
+            <table:column date="true" dateTimePattern="${regimentHierarchy_closeddate_date_format}" id="c_ee_itcollege_example_entities_RegimentHierarchy_closedDate" property="closedDate" z="zzm7tV6FN3vUoQu6Hcjfc7yXIhc="/>
             <table:column id="c_ee_itcollege_example_entities_RegimentHierarchy_comment" property="comment" z="ENs0Hno+NqSZQnRvrKI8qALUP4M="/>
             <table:column date="true" dateTimePattern="${regimentHierarchy_fromdate_date_format}" id="c_ee_itcollege_example_entities_RegimentHierarchy_fromDate" property="fromDate" z="/CWCkbhJQNFg7kIDkP+2plXmLHw="/>
             <table:column date="true" dateTimePattern="${regimentHierarchy_untildate_date_format}" id="c_ee_itcollege_example_entities_RegimentHierarchy_untilDate" property="untilDate" z="UNjSH+Oo4b8HaP42GxLMs99/CA8="/>
-            <table:column id="c_ee_itcollege_example_entities_RegimentHierarchy_openedBy" property="openedBy" z="6oJqUm9zkIX6kSlkj0Lx5Q7pvVk="/>
-            <table:column date="true" dateTimePattern="${regimentHierarchy_openeddate_date_format}" id="c_ee_itcollege_example_entities_RegimentHierarchy_openedDate" property="openedDate" z="9BJ/OIXE+v/mcAK/npyX6JET8lw="/>
-            <table:column id="c_ee_itcollege_example_entities_RegimentHierarchy_changedBy" property="changedBy" z="8gPqFOlK/fALvRIEZz1DQpJMGBg="/>
         </table:table>
     </page:list>
 </div>

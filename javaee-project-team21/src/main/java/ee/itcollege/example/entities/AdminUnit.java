@@ -28,9 +28,10 @@ import org.springframework.roo.addon.tostring.RooToString;
 //	public class AdminUnit {
 	private static final long serialVersionUID = 1L;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	//private Long id;
 
 	@Size(min=2, max=30)
 	@NotNull
@@ -52,28 +53,6 @@ import org.springframework.roo.addon.tostring.RooToString;
     @DateTimeFormat(style = "M-")
     private Date untilDate;
 
- /*   private String openedBy;
-    
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	@Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date openedDate;
-    
-    public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-*/
 	private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -82,11 +61,19 @@ import org.springframework.roo.addon.tostring.RooToString;
     
     private String closedBy;
     
-   	@Temporal(TemporalType.TIMESTAMP)
-    @NotNull
-    @DateTimeFormat(style = "M-")
-   	private Date closedDate = GeneralFunctions.notDeleted;
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(style = "M-")
+	private Date closedDate = GeneralFunctions.notDeleted;
+	
+	public Date getClosedDate() {
+		return closedDate;
+	}
 
+	public void setClosedDate(Date closedDate) {
+		this.closedDate = closedDate;
+	}
+	
+    
 	@OneToMany(mappedBy = "adminUnit")
 	private Collection<Regiment> regiments;
 
@@ -164,14 +151,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 	public void setClosedBy(String closedBy) {
 		this.closedBy = closedBy;
 	}
-
-	public Date getClosedDate() {
-		return closedDate;
-	}
-
-	public void setClosedDate(Date closedDate) {
-		this.closedDate = closedDate;
-	} 
 
 	public Collection<Regiment> getRegiments() {
 	    return regiments;

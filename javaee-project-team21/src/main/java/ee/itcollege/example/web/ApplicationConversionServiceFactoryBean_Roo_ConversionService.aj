@@ -31,42 +31,42 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.AdminUnitConverter implements Converter<AdminUnit, String> {
         public String convert(AdminUnit adminUnit) {
-            return new StringBuilder().append(adminUnit.getOpenedBy()).append(" ").append(adminUnit.getOpenedDate()).append(" ").append(adminUnit.getName()).append(" ").append(adminUnit.getCode()).toString();
+            return new StringBuilder().append(adminUnit.getOpenedBy()).append(" ").append(adminUnit.getOpenedDate()).append(" ").append(adminUnit.getClosedDate()).append(" ").append(adminUnit.getName()).toString();
         }
         
     }
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.AdminUnitHierarchyConverter implements Converter<AdminUnitHierarchy, String> {
         public String convert(AdminUnitHierarchy adminUnitHierarchy) {
-            return new StringBuilder().append(adminUnitHierarchy.getComment()).append(" ").append(adminUnitHierarchy.getFromDate()).append(" ").append(adminUnitHierarchy.getUntilDate()).append(" ").append(adminUnitHierarchy.getOpenedBy()).toString();
+            return new StringBuilder().append(adminUnitHierarchy.getOpenedBy()).append(" ").append(adminUnitHierarchy.getOpenedDate()).append(" ").append(adminUnitHierarchy.getClosedDate()).append(" ").append(adminUnitHierarchy.getComment()).toString();
         }
         
     }
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.AdminUnitTypeConverter implements Converter<AdminUnitType, String> {
         public String convert(AdminUnitType adminUnitType) {
-            return new StringBuilder().append(adminUnitType.getName()).append(" ").append(adminUnitType.getCode()).append(" ").append(adminUnitType.getComment()).append(" ").append(adminUnitType.getFromDate()).toString();
+            return new StringBuilder().append(adminUnitType.getOpenedBy()).append(" ").append(adminUnitType.getOpenedDate()).append(" ").append(adminUnitType.getClosedDate()).append(" ").append(adminUnitType.getName()).toString();
         }
         
     }
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.AdminUnitTypeHierarchyConverter implements Converter<AdminUnitTypeHierarchy, String> {
         public String convert(AdminUnitTypeHierarchy adminUnitTypeHierarchy) {
-            return new StringBuilder().append(adminUnitTypeHierarchy.getComment()).append(" ").append(adminUnitTypeHierarchy.getOpenedBy()).append(" ").append(adminUnitTypeHierarchy.getOpenedDate()).append(" ").append(adminUnitTypeHierarchy.getChangedBy()).toString();
+            return new StringBuilder().append(adminUnitTypeHierarchy.getOpenedBy()).append(" ").append(adminUnitTypeHierarchy.getOpenedDate()).append(" ").append(adminUnitTypeHierarchy.getClosedDate()).append(" ").append(adminUnitTypeHierarchy.getComment()).toString();
         }
         
     }
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.RegimentConverter implements Converter<Regiment, String> {
         public String convert(Regiment regiment) {
-            return new StringBuilder().append(regiment.getName()).append(" ").append(regiment.getCode()).append(" ").append(regiment.getComment()).append(" ").append(regiment.getFromDate()).toString();
+            return new StringBuilder().append(regiment.getOpenedBy()).append(" ").append(regiment.getOpenedDate()).append(" ").append(regiment.getClosedDate()).append(" ").append(regiment.getName()).toString();
         }
         
     }
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.RegimentHierarchyConverter implements Converter<RegimentHierarchy, String> {
         public String convert(RegimentHierarchy regimentHierarchy) {
-            return new StringBuilder().append(regimentHierarchy.getComment()).append(" ").append(regimentHierarchy.getFromDate()).append(" ").append(regimentHierarchy.getUntilDate()).append(" ").append(regimentHierarchy.getOpenedBy()).toString();
+            return new StringBuilder().append(regimentHierarchy.getOpenedBy()).append(" ").append(regimentHierarchy.getOpenedDate()).append(" ").append(regimentHierarchy.getClosedDate()).append(" ").append(regimentHierarchy.getComment()).toString();
         }
         
     }

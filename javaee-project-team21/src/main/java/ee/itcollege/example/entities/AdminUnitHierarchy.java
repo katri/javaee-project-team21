@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -19,11 +20,14 @@ import org.springframework.roo.addon.tostring.RooToString;
 @Entity
 @RooToString
 @RooEntity
-public class AdminUnitHierarchy{
+public class AdminUnitHierarchy extends BaseEntity implements Serializable {
+
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private static final long serialVersionUID = 1L;
+	
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	//private Long id;
 
 	@Size(max=250)
 	@NotNull
@@ -38,15 +42,6 @@ public class AdminUnitHierarchy{
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
-    @Size(min=2, max=30)
-	@NotNull
-	private String openedBy;
-    
-    @NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date openedDate;
-    
     private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -55,10 +50,18 @@ public class AdminUnitHierarchy{
     
     private String closedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date closedDate;
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(style = "M-")
+	private Date closedDate = GeneralFunctions.notDeleted;
+	
+	public Date getClosedDate() {
+		return closedDate;
+	}
 
+	public void setClosedDate(Date closedDate) {
+		this.closedDate = closedDate;
+	}
+	
 	@ManyToOne
 	private AdminUnit adminUnit;
 
@@ -88,23 +91,7 @@ public class AdminUnitHierarchy{
 	public void setUntilDate(Date untilDate) {
 		this.untilDate = untilDate;
 	}
-
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-
+	
 	public String getChangedBy() {
 		return changedBy;
 	}
@@ -127,14 +114,6 @@ public class AdminUnitHierarchy{
 
 	public void setClosedBy(String closedBy) {
 		this.closedBy = closedBy;
-	}
-
-	public Date getClosedDate() {
-		return closedDate;
-	}
-
-	public void setClosedDate(Date closedDate) {
-		this.closedDate = closedDate;
 	}
 
 	public AdminUnit getAdminUnit() {

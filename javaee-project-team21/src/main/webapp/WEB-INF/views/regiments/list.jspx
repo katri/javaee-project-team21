@@ -7,9 +7,9 @@
             <table:column id="c_ee_itcollege_example_entities_Regiment_name" property="name" z="DtaGXsi/ivYz4ZEe0s1Vmewf0fk="/>
             <table:column id="c_ee_itcollege_example_entities_Regiment_code" property="code" z="XyrGd6SnO3n2WXQsu5ypM04YQoU="/>
             <table:column id="c_ee_itcollege_example_entities_Regiment_comment" property="comment" z="HfJdbi7NuJWACEiuWdHnv545m6Y="/>
-            <table:column date="true" dateTimePattern="${regiment_fromdate_date_format}" id="c_ee_itcollege_example_entities_Regiment_fromDate" property="fromDate" z="dSROAqw52N7WpEvhfP+mw0RJTgs="/>
-            <table:column date="true" dateTimePattern="${regiment_untildate_date_format}" id="c_ee_itcollege_example_entities_Regiment_untilDate" property="untilDate" z="ei75MgJy4azyk0CmQ76tr4NWUFo="/>
             <table:column id="c_ee_itcollege_example_entities_Regiment_openedBy" property="openedBy" z="BpP+ElYGZ2QTOtfVmZWEw3pN1/I="/>
+            <table:column date="true" dateTimePattern="${regiment_openeddate_date_format}" id="c_ee_itcollege_example_entities_Regiment_openedDate" property="openedDate" z="7j5IkE2zkLFrWhI+PAceVEyDLEU="/>
+            <table:column date="true" dateTimePattern="${regiment_closeddate_date_format}" id="c_ee_itcollege_example_entities_Regiment_closedDate" property="closedDate" z="sQ75Sv8h/Omze7velSUj+o/LLaY="/>
         </table:table>
     </page:list>
 </div>

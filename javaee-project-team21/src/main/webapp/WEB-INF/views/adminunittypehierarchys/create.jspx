@@ -4,8 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_example_entities_AdminUnitTypeHierarchy" modelAttribute="adminUnitTypeHierarchy" path="/adminunittypehierarchys" render="${empty dependencies}" z="7UYc4fN1E7jic35TWQ7sonCIT5Q=">
         <field:textarea field="comment" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_comment" required="true" z="84qt4fYm6jmwPoQqqyxs5N6tF/E="/>
-        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedBy" max="30" min="2" required="true" z="U6Z4DdqP84rwR4U5LbiWXzqh3Gw="/>
-        <field:datetime dateTimePattern="${adminUnitTypeHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedDate" required="true" z="yih3HN+kdXm6I1gi6bKRbfds9RY="/>
+        <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedBy" z="JNcheVj8DtUAlNY8nsyNqGoiesM="/>
+        <field:datetime dateTimePattern="${adminUnitTypeHierarchy_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedDate" z="D90u5q4VEgKzTDVpraDuWn1iuO0="/>
         <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedBy" z="575wCoj4FeEhvET8D6r6DJC5w1k="/>
         <field:datetime dateTimePattern="${adminUnitTypeHierarchy_changeddate_date_format}" field="changedDate" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedDate" z="+3+iFmDCRiEEjdDxJiIa0Pg1OeM="/>
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" z="wziyBeMnehMswVkHJD7o8YjoKuw="/>

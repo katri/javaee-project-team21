@@ -107,8 +107,8 @@ privileged aspect AdminUnitTypeHierarchyController_Roo_Controller {
     
     void AdminUnitTypeHierarchyController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("adminUnitTypeHierarchy_openeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("adminUnitTypeHierarchy_changeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("adminUnitTypeHierarchy_closeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("adminUnitTypeHierarchy_changeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String AdminUnitTypeHierarchyController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

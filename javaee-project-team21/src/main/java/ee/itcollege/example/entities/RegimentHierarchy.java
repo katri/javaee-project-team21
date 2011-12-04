@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -20,10 +21,13 @@ import javax.validation.constraints.Size;
 @Entity
 @RooToString
 @RooEntity
-public class RegimentHierarchy {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+public class RegimentHierarchy extends BaseEntity implements Serializable {
+private static final long serialVersionUID = 1L;
+
+
+//@Id
+//@GeneratedValue(strategy = GenerationType.AUTO)
+//private Long id;
 
 	@Size(max=250)
 	@NotNull
@@ -38,14 +42,6 @@ public class RegimentHierarchy {
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
-    @NotNull
-	private String openedBy;
-    
-    @NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date openedDate;
-    
     private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -54,10 +50,19 @@ public class RegimentHierarchy {
     
     private String closedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date closedDate;
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(style = "M-")
+	private Date closedDate = GeneralFunctions.notDeleted;
+	
+	public Date getClosedDate() {
+		return closedDate;
+	}
 
+	public void setClosedDate(Date closedDate) {
+		this.closedDate = closedDate;
+	}
+	
+	
 	@ManyToOne
 	private Regiment regiment;
 
@@ -89,22 +94,6 @@ public class RegimentHierarchy {
 		this.untilDate = untilDate;
 	}
 
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-
 	public String getChangedBy() {
 		return changedBy;
 	}
@@ -127,14 +116,6 @@ public class RegimentHierarchy {
 
 	public void setClosedBy(String closedBy) {
 		this.closedBy = closedBy;
-	}
-
-	public Date getClosedDate() {
-		return closedDate;
-	}
-
-	public void setClosedDate(Date closedDate) {
-		this.closedDate = closedDate;
 	}
 
 	public Regiment getRegiment() {

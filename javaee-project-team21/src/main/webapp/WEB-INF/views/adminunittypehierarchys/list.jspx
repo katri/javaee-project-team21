@@ -9,7 +9,7 @@
             <table:column date="true" dateTimePattern="${adminUnitTypeHierarchy_openeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_openedDate" property="openedDate" z="Ba/Wn1FiUR8OSQGK6kBtFgiUKF4="/>
             <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedBy" property="changedBy" z="IvKWU/kuUyPj8+osRuxDMlbu1Ww="/>
             <table:column date="true" dateTimePattern="${adminUnitTypeHierarchy_changeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_changedDate" property="changedDate" z="2k4xWq20pJR8xrDskBIRXDm7abc="/>
-            <table:column id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" property="closedBy" z="nbMaTbLEwj+7DJHNTqm4Jx3RIno="/>
+            <table:column date="true" dateTimePattern="${adminUnitTypeHierarchy_closeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedDate" property="closedDate" z="POOFp+QihRpgG69RO1pbf6tK/fw="/>
         </table:table>
     </page:list>
 </div>

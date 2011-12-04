@@ -29,9 +29,9 @@ public class Regiment extends BaseEntity implements Serializable {
 private static final long serialVersionUID = 1L;
 //public class Regiment {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+//	@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	//private Long id;
 
 	@Size(min=2, max=30)
 	@NotNull
@@ -52,14 +52,6 @@ private static final long serialVersionUID = 1L;
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
- /*   @NotNull
-    protected String openedBy;
-    
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date openedDate;
-   */ 
     private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -67,11 +59,19 @@ private static final long serialVersionUID = 1L;
     private Date changedDate;
     
     private String closedBy;
-    
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date closedDate = GeneralFunctions.notDeleted;
 
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(style = "M-")
+	private Date closedDate = GeneralFunctions.notDeleted;
+	
+	public Date getClosedDate() {
+		return closedDate;
+	}
+
+	public void setClosedDate(Date closedDate) {
+		this.closedDate = closedDate;
+	}
+	
 	@ManyToOne
 	private AdminUnit adminUnit;
 
@@ -120,23 +120,7 @@ private static final long serialVersionUID = 1L;
 	public void setUntilDate(Date untilDate) {
 		this.untilDate = untilDate;
 	}
-/*
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-*/
+	
 	public String getChangedBy() {
 		return changedBy;
 	}
@@ -159,14 +143,6 @@ private static final long serialVersionUID = 1L;
 
 	public void setClosedBy(String closedBy) {
 		this.closedBy = closedBy;
-	}
-
-	public Date getClosedDate() {
-		return closedDate;
-	}
-
-	public void setClosedDate(Date closedDate) {
-		this.closedDate = closedDate;
 	}
 
 	public AdminUnit getAdminUnit() {

@@ -16,7 +16,7 @@
         <field:display date="true" dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_AdminUnit_closedDate" object="${adminunit}" z="Fty1GoKYfEkL82jPjuaD9DEXWyU="/>
          -->
         <!-- FIXME: non-translatable text -->
-        <div>Selles yksuses paiknevad vaeosad</div>
+        <div>Selles üksuses paiknevad väeosad</div>
         <ul>
             <c:forEach items="${adminunit.regiments}" var="b">
                 <li>

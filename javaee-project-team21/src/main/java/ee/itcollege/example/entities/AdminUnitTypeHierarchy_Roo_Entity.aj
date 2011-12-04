@@ -4,82 +4,10 @@
 package ee.itcollege.example.entities;
 
 import ee.itcollege.example.entities.AdminUnitTypeHierarchy;
-import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Version;
-import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect AdminUnitTypeHierarchy_Roo_Entity {
-    
-    @PersistenceContext
-    transient EntityManager AdminUnitTypeHierarchy.entityManager;
-    
-    @Version
-    @Column(name = "version")
-    private Integer AdminUnitTypeHierarchy.version;
-    
-    public Long AdminUnitTypeHierarchy.getId() {
-        return this.id;
-    }
-    
-    public void AdminUnitTypeHierarchy.setId(Long id) {
-        this.id = id;
-    }
-    
-    public Integer AdminUnitTypeHierarchy.getVersion() {
-        return this.version;
-    }
-    
-    public void AdminUnitTypeHierarchy.setVersion(Integer version) {
-        this.version = version;
-    }
-    
-    @Transactional
-    public void AdminUnitTypeHierarchy.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void AdminUnitTypeHierarchy.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            AdminUnitTypeHierarchy attached = AdminUnitTypeHierarchy.findAdminUnitTypeHierarchy(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void AdminUnitTypeHierarchy.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void AdminUnitTypeHierarchy.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
-    }
-    
-    @Transactional
-    public AdminUnitTypeHierarchy AdminUnitTypeHierarchy.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        AdminUnitTypeHierarchy merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
-    }
-    
-    public static final EntityManager AdminUnitTypeHierarchy.entityManager() {
-        EntityManager em = new AdminUnitTypeHierarchy().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
     
     public static long AdminUnitTypeHierarchy.countAdminUnitTypeHierarchys() {
         return entityManager().createQuery("SELECT COUNT(o) FROM AdminUnitTypeHierarchy o", Long.class).getSingleResult();

@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -23,10 +24,13 @@ import ee.itcollege.example.entities.AdminUnitTypeHierarchy;
 @Entity
 @RooToString
 @RooEntity
-public class AdminUnitType {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+public class AdminUnitType extends BaseEntity implements Serializable {
+private static final long serialVersionUID = 1L;
+
+
+//@Id
+//@GeneratedValue(strategy = GenerationType.AUTO)
+//private Long id;
 
 	@Size(min=2, max=30)
 	@NotNull
@@ -48,15 +52,7 @@ public class AdminUnitType {
 	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date untilDate;
-    
-	@NotNull
-	private String openedBy;
-    
-	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date openedDate;
-    
+       
     private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -65,10 +61,19 @@ public class AdminUnitType {
     
     private String closedBy;
     
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date closedDate;
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(style = "M-")
+	private Date closedDate = GeneralFunctions.notDeleted;
+	
+	public Date getClosedDate() {
+		return closedDate;
+	}
 
+	public void setClosedDate(Date closedDate) {
+		this.closedDate = closedDate;
+	}
+	
+  
 	@OneToMany(mappedBy = "adminUnitType")
 	private Collection<AdminUnit> adminUnits;
 
@@ -119,22 +124,6 @@ public class AdminUnitType {
 		this.untilDate = untilDate;
 	}
 
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-
 	public String getChangedBy() {
 		return changedBy;
 	}
@@ -159,13 +148,6 @@ public class AdminUnitType {
 		this.closedBy = closedBy;
 	}
 
-	public Date getClosedDate() {
-		return closedDate;
-	}
-
-	public void setClosedDate(Date closedDate) {
-		this.closedDate = closedDate;
-	}
 
 	public Collection<AdminUnit> getAdminUnits() {
 	    return adminUnits;

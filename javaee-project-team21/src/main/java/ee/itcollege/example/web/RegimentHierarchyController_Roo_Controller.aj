@@ -106,11 +106,11 @@ privileged aspect RegimentHierarchyController_Roo_Controller {
     }
     
     void RegimentHierarchyController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("regimentHierarchy_openeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("regimentHierarchy_closeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("regimentHierarchy_fromdate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("regimentHierarchy_untildate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("regimentHierarchy_openeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("regimentHierarchy_changeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("regimentHierarchy_closeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String RegimentHierarchyController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
