@@ -68,7 +68,7 @@ public class AdminUnit {
    	@Temporal(TemporalType.TIMESTAMP)
     @NotNull
     @DateTimeFormat(style = "M-")
-   	private Date closedDate;
+   	private Date closedDate = GeneralFunctions.notDeleted;
 
 	@OneToMany(mappedBy = "adminUnit")
 	private Collection<Regiment> regiments;

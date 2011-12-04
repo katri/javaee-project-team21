@@ -66,7 +66,7 @@ public class Regiment {
     
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date closedDate;
+    private Date closedDate = GeneralFunctions.notDeleted;
 
 	@ManyToOne
 	private AdminUnit adminUnit;
