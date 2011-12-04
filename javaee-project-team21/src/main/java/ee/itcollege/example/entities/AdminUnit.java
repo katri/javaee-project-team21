@@ -1,6 +1,5 @@
 package ee.itcollege.example.entities;
 
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 
@@ -23,8 +22,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity
 
-public class AdminUnit extends GeneralFunctions implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class AdminUnit {
+	// private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -69,7 +68,7 @@ public class AdminUnit extends GeneralFunctions implements Serializable{
    	@Temporal(TemporalType.TIMESTAMP)
     @NotNull
     @DateTimeFormat(style = "M-")
-   	private Date closedDate = notDeleted;
+   	private Date closedDate = GeneralFunctions.notDeleted;
 
 	@OneToMany(mappedBy = "adminUnit")
 	private Collection<Regiment> regiments;
