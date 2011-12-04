@@ -11,11 +11,11 @@
         <field:input field="openedBy" id="c_ee_itcollege_example_entities_AdminUnit_openedBy" required="true" z="cyg2eunN+bR1sDLcPKfTTIkzU2k="/>
         <field:datetime dateTimePattern="${adminUnit_openeddate_date_format}" field="openedDate" id="c_ee_itcollege_example_entities_AdminUnit_openedDate" required="true" z="SuoxvAW/xQJ66WGh8CQY+Ch3EM8="/>
         <field:input field="changedBy" id="c_ee_itcollege_example_entities_AdminUnit_changedBy" z="ah8risAwM4tMYLGKexRwWbhgbAc="/>
-        <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnit_closedBy" z="pF4d5ZzmduafDT4CrzVzfug9CwQ="/>
-        <field:datetime dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnit_closedDate" required="true" z="8ATw7TTU6nVXuiaRhAWBNDtt/MQ="/>
         <field:simple field="regiments" id="c_ee_itcollege_example_entities_AdminUnit_regiments" messageCode="entity_reference_not_managed" messageCodeAttribute="Regiment" z="w6a5ToqAdhrK5Nb6x5esmXRFmYk="/>
         <field:select field="adminUnitType" id="c_ee_itcollege_example_entities_AdminUnit_adminUnitType" itemValue="id" items="${adminunittypes}" path="/adminunittypes" z="9kh9VZnAl8kq0fkQN+hKh8xuPVk="/>
         <field:simple field="adminUnitHierarchys" id="c_ee_itcollege_example_entities_AdminUnit_adminUnitHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Hierarchy" z="mxuRyTcZ5NgNHENvQCHdXxeubE4="/>
         <field:simple field="subUnitHierarchys" id="c_ee_itcollege_example_entities_AdminUnit_subUnitHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Hierarchy" z="o0jX17wlU+4SzDqFQMLTZtWy/uc="/>
+        <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnit_closedBy" z="pF4d5ZzmduafDT4CrzVzfug9CwQ="/>
+        <field:datetime dateTimePattern="${adminUnit_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnit_closedDate" required="true" z="8ATw7TTU6nVXuiaRhAWBNDtt/MQ="/>
     </form:update>
 </div>

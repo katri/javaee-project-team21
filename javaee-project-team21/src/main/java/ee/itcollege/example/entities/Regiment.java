@@ -49,7 +49,7 @@ public class Regiment {
     private Date untilDate;
     
     @NotNull
-    private String openedBy;
+    protected String openedBy;
     
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -66,7 +66,7 @@ public class Regiment {
     
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date closedDate;
+    private Date closedDate = GeneralFunctions.notDeleted;
 
 	@ManyToOne
 	private AdminUnit adminUnit;

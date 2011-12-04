@@ -18,6 +18,7 @@ privileged aspect AdminUnitTypeHierarchy_Roo_ToString {
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("OpenedBy: ").append(getOpenedBy()).append(", ");
         sb.append("OpenedDate: ").append(getOpenedDate()).append(", ");
+        sb.append("SubAdminUnitType: ").append(getSubAdminUnitType()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

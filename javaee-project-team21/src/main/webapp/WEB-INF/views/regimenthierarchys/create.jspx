@@ -13,6 +13,7 @@
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_RegimentHierarchy_closedBy" z="ptTS5mcQMncaZt7bZxVAYVX6G50="/>
         <field:datetime dateTimePattern="${regimentHierarchy_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_RegimentHierarchy_closedDate" z="ZKWMdwfiJGX9voyP8wHvx4MvnVY="/>
         <field:select field="regiment" id="c_ee_itcollege_example_entities_RegimentHierarchy_regiment" itemValue="id" items="${regiments}" path="/regiments" z="V6OMPIqqMqYeV9ZRYu1e2/pLk8w="/>
+        <field:select field="subRegiment" id="c_ee_itcollege_example_entities_RegimentHierarchy_subRegiment" itemValue="id" items="${regiments}" path="/regiments" z="585QbI3Ja0kdEZAY1MTUDmXpnJw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_RegimentHierarchy" render="${not empty dependencies}" z="Fb2v7tCNxJlZdZAW58uFqHpvJ9Q="/>
 </div>

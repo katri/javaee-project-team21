@@ -27,5 +27,8 @@
             <menu:item id="i_adminunittypehierarchy_new" messageCode="global_menu_new" url="/adminunittypehierarchys?form" z="WLvdE0iX5l79gB6j9KvKsyFe280="/>
             <menu:item id="i_adminunittypehierarchy_list" messageCode="global_menu_list" url="/adminunittypehierarchys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4CvzD4UeBxqJYCYq5g5wD9qns+o="/>
         </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__regimenteditindex_id" messageCode="global_generic" url="/regimentedit/index" z="09Le8avfBZPp26jBViyyv4Takh8="/>
+        </menu:category>
     </menu:menu>
 </div>

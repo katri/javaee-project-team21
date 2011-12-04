@@ -13,5 +13,6 @@
         <field:display field="closedBy" id="s_ee_itcollege_example_entities_RegimentHierarchy_closedBy" object="${regimenthierarchy}" z="/A/V9uH2DD8URnujXNmL9FyBjnA="/>
         <field:display date="true" dateTimePattern="${regimentHierarchy_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_RegimentHierarchy_closedDate" object="${regimenthierarchy}" z="yQJNuigA5HcIT/U172XJ5EkKKw8="/>
         <field:display field="regiment" id="s_ee_itcollege_example_entities_RegimentHierarchy_regiment" object="${regimenthierarchy}" z="cK429MrEa0jlS0zRJLIRdosn1x4="/>
+        <field:display field="subRegiment" id="s_ee_itcollege_example_entities_RegimentHierarchy_subRegiment" object="${regimenthierarchy}" z="vxsrByzwC3own02t0ruC/9uOKS8="/>
     </page:show>
 </div>

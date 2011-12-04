@@ -11,5 +11,6 @@
         <field:input field="closedBy" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" z="wziyBeMnehMswVkHJD7o8YjoKuw="/>
         <field:datetime dateTimePattern="${adminUnitTypeHierarchy_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedDate" z="KhsuhrdueXwipOzNLwR6V039WD8="/>
         <field:select field="adminUnitType" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_adminUnitType" itemValue="id" items="${adminunittypes}" path="/adminunittypes" z="7V2UVdIJ5VL6II8+ntD1u81HPGs="/>
+        <field:select field="subAdminUnitType" id="c_ee_itcollege_example_entities_AdminUnitTypeHierarchy_subAdminUnitType" itemValue="id" items="${adminunittypes}" path="/adminunittypes" z="FVfzUFLlNaUUm8xQAZzxbB3WBpA="/>
     </form:update>
 </div>

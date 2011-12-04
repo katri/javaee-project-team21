@@ -22,6 +22,7 @@ privileged aspect Regiment_Roo_ToString {
         sb.append("OpenedBy: ").append(getOpenedBy()).append(", ");
         sb.append("OpenedDate: ").append(getOpenedDate()).append(", ");
         sb.append("RegimentHierarchys: ").append(getRegimentHierarchys() == null ? "null" : getRegimentHierarchys().size()).append(", ");
+        sb.append("SubRegimentHierarchys: ").append(getSubRegimentHierarchys() == null ? "null" : getSubRegimentHierarchys().size()).append(", ");
         sb.append("UntilDate: ").append(getUntilDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

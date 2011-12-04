@@ -19,6 +19,7 @@ privileged aspect RegimentHierarchy_Roo_ToString {
         sb.append("OpenedBy: ").append(getOpenedBy()).append(", ");
         sb.append("OpenedDate: ").append(getOpenedDate()).append(", ");
         sb.append("Regiment: ").append(getRegiment()).append(", ");
+        sb.append("SubRegiment: ").append(getSubRegiment()).append(", ");
         sb.append("UntilDate: ").append(getUntilDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

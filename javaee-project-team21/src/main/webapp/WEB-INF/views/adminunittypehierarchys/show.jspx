@@ -11,5 +11,6 @@
         <field:display field="closedBy" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedBy" object="${adminunittypehierarchy}" z="6U/JVfg6g2kweZ8A8CtyqnWlD+0="/>
         <field:display date="true" dateTimePattern="${adminUnitTypeHierarchy_closeddate_date_format}" field="closedDate" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_closedDate" object="${adminunittypehierarchy}" z="MzQ/XPyhZSqTM5r+Tv/jeDksyrk="/>
         <field:display field="adminUnitType" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_adminUnitType" object="${adminunittypehierarchy}" z="UX5HGOnTVNOI79DYoDhI1xlMX9o="/>
+        <field:display field="subAdminUnitType" id="s_ee_itcollege_example_entities_AdminUnitTypeHierarchy_subAdminUnitType" object="${adminunittypehierarchy}" z="3H2NUDqlvuE79SbbZgIkwRZXVw8="/>
     </page:show>
 </div>

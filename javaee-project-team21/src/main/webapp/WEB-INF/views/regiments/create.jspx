@@ -16,6 +16,7 @@
         <field:datetime dateTimePattern="${regiment_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_Regiment_closedDate" z="CVgZPy1z/Grvn8aQ0QoG7hgAzIc="/>
         <field:select field="adminUnit" id="c_ee_itcollege_example_entities_Regiment_adminUnit" itemValue="id" items="${adminunits}" path="/adminunits" z="0IOVn/JQVj44voSCgFLGw9J5/vU="/>
         <field:simple field="regimentHierarchys" id="c_ee_itcollege_example_entities_Regiment_regimentHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Regiment Hierarchy" z="xjuWzGZkCu8pvHTEpFArAtko3Rk="/>
+        <field:simple field="subRegimentHierarchys" id="c_ee_itcollege_example_entities_Regiment_subRegimentHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Regiment Hierarchy" z="zVITIaUZeYnZTxyNRiIHVdnNPMo="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_Regiment" render="${not empty dependencies}" z="nM7vIUYTPq0tqKQdJC3XpPG8rrc="/>
 </div>

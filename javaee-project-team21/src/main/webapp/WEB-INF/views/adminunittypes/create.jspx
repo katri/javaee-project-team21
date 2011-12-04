@@ -16,6 +16,7 @@
         <field:datetime dateTimePattern="${adminUnitType_closeddate_date_format}" field="closedDate" id="c_ee_itcollege_example_entities_AdminUnitType_closedDate" z="eKyNI5mq5DwZEepRLb/3BkVCtmU="/>
         <field:simple field="adminUnits" id="c_ee_itcollege_example_entities_AdminUnitType_adminUnits" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit" z="qIKLXvjsK/ZAz5oUnjFAj7pjtc4="/>
         <field:simple field="adminUnitTypeHierarchys" id="c_ee_itcollege_example_entities_AdminUnitType_adminUnitTypeHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Type Hierarchy" z="4xdMFAHevVvjXnXR6L7HtLOUv30="/>
+        <field:simple field="subAdminUnitTypeHierarchys" id="c_ee_itcollege_example_entities_AdminUnitType_subAdminUnitTypeHierarchys" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin Unit Type Hierarchy" z="TYfCQ3Ps30kzugakWFHD6piLwYM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_example_entities_AdminUnitType" render="${not empty dependencies}" z="noKu2wzS5wAufVlVhVpYONAmWXk="/>
 </div>
