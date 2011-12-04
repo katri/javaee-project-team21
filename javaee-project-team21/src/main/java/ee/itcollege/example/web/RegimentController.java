@@ -14,9 +14,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class RegimentController {
 	
-	   @ModelAttribute("adminunits")
-	    public Collection<AdminUnit> populateAdminUnits() {
-	        return AdminUnit.findAllAdminUnits();
-	    }
 	    
 }

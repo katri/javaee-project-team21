@@ -8,8 +8,8 @@
             <table:column id="c_ee_itcollege_example_entities_AdminUnit_code" property="code" z="gVokgrQr9DpcdqCmkiK579ktgVo="/>
             <table:column id="c_ee_itcollege_example_entities_AdminUnit_comment" property="comment" z="Mjm5tLR1UPnKmXxj+i8u3XrnWb0="/>
             <table:column date="true" dateTimePattern="${adminUnit_fromdate_date_format}" id="c_ee_itcollege_example_entities_AdminUnit_fromDate" property="fromDate" z="Hxtss1HxiPw9CekQcfW5P0hT6XQ="/>
-            <table:column date="true" dateTimePattern="${adminUnit_untildate_date_format}" id="c_ee_itcollege_example_entities_AdminUnit_untilDate" property="untilDate" z="JeP9Sx6Qj7wnUsB0AgwfVcS9j5s="/>
             <table:column id="c_ee_itcollege_example_entities_AdminUnit_openedBy" property="openedBy" z="Pvtvx/Cy5CWP7Iv/koMorJSNSlY="/>
+            <table:column date="true" dateTimePattern="${adminUnit_openeddate_date_format}" id="c_ee_itcollege_example_entities_AdminUnit_openedDate" property="openedDate" z="f9vziK1QIKWBoP2ePbxEi0Y+Kks="/>
         </table:table>
     </page:list>
 </div>

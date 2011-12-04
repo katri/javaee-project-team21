@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -23,7 +24,10 @@ import javax.validation.constraints.Size;
 @Entity
 @RooToString
 @RooEntity
-public class Regiment {
+
+public class Regiment extends BaseEntity implements Serializable {
+private static final long serialVersionUID = 1L;
+//public class Regiment {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -48,14 +52,14 @@ public class Regiment {
     @DateTimeFormat(style = "M-")
     private Date untilDate;
     
-    @NotNull
+ /*   @NotNull
     protected String openedBy;
     
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date openedDate;
-    
+   */ 
     private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
@@ -116,7 +120,7 @@ public class Regiment {
 	public void setUntilDate(Date untilDate) {
 		this.untilDate = untilDate;
 	}
-
+/*
 	public String getOpenedBy() {
 		return openedBy;
 	}
@@ -132,7 +136,7 @@ public class Regiment {
 	public void setOpenedDate(Date openedDate) {
 		this.openedDate = openedDate;
 	}
-
+*/
 	public String getChangedBy() {
 		return changedBy;
 	}

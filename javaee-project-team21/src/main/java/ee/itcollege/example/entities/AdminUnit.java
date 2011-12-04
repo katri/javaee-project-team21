@@ -1,5 +1,6 @@
 package ee.itcollege.example.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -23,8 +24,9 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity
 
-public class AdminUnit {
-	// private static final long serialVersionUID = 1L;
+	public class AdminUnit extends BaseEntity implements Serializable {
+//	public class AdminUnit {
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -49,16 +51,30 @@ public class AdminUnit {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date untilDate;
+
+ /*   private String openedBy;
     
-    @NotNull
-	private String openedBy;
-    
-    @NotNull
+	public String getOpenedBy() {
+		return openedBy;
+	}
+
+	public void setOpenedBy(String openedBy) {
+		this.openedBy = openedBy;
+	}
+
 	@Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date openedDate;
     
-    private String changedBy;
+    public Date getOpenedDate() {
+		return openedDate;
+	}
+
+	public void setOpenedDate(Date openedDate) {
+		this.openedDate = openedDate;
+	}
+*/
+	private String changedBy;
     
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
@@ -124,22 +140,7 @@ public class AdminUnit {
 		this.untilDate = untilDate;
 	}
 
-	public String getOpenedBy() {
-		return openedBy;
-	}
-
-	public void setOpenedBy(String openedBy) {
-		this.openedBy = openedBy;
-	}
-
-	public Date getOpenedDate() {
-		return openedDate;
-	}
-
-	public void setOpenedDate(Date openedDate) {
-		this.openedDate = openedDate;
-	}
-
+	
 	public String getChangedBy() {
 		return changedBy;
 	}
@@ -188,6 +189,7 @@ public class AdminUnit {
 					b.setAdminUnit(this);
 				}
 		}
+		
 	}
    	
 	public AdminUnitType getAdminUnitType() {

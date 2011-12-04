@@ -118,9 +118,9 @@ privileged aspect AdminUnitController_Roo_Controller {
     }
     
     void AdminUnitController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("adminUnit_openeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("adminUnit_fromdate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("adminUnit_untildate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("adminUnit_openeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("adminUnit_closeddate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     

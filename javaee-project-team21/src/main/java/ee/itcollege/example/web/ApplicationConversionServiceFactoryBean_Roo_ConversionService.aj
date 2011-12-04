@@ -31,7 +31,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class ee.itcollege.example.web.ApplicationConversionServiceFactoryBean.AdminUnitConverter implements Converter<AdminUnit, String> {
         public String convert(AdminUnit adminUnit) {
-            return new StringBuilder().append(adminUnit.getName()).append(" ").append(adminUnit.getCode()).append(" ").append(adminUnit.getComment()).append(" ").append(adminUnit.getFromDate()).toString();
+            return new StringBuilder().append(adminUnit.getOpenedBy()).append(" ").append(adminUnit.getOpenedDate()).append(" ").append(adminUnit.getName()).append(" ").append(adminUnit.getCode()).toString();
         }
         
     }

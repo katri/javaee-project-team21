@@ -23,15 +23,23 @@ import org.springframework.transaction.annotation.Transactional;
 @RooEntity(mappedSuperclass = true)
 */
 
-public class GeneralFunctions {
+	public class GeneralFunctions {
 	
-	public static final Date notDeleted = new Date(253402207200000L);
-
-	public static Date effectiveDate() {
-
-	return new Date();
+		public static final Date notDeleted = new Date(253402207200000L);
+		
+		public static Date effectiveDate() {
+		return new Date();
 
 	}
+    
+		public Date getDateTime() {
+			//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			Date dateNow = new Date();
+			return dateNow;
+        }
+    
+	
+	
 	
 	
 	/*
